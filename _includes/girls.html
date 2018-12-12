@@ -9,15 +9,15 @@
                 </div>
             </div>
             <div class="row">
-                {% for girl in site.girls %}
+                {% for post in site.posts.girls %}
                     <div class="col-sm-4 girls-item">
-                        <a href="#girlsModal-{{ girl.modal-id }}" class="girls-link" data-toggle="modal">
+                        <a href="#girlsModal-{{ post.modal-id }}" class="girls-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
                                     <i class="fa fa-search-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img src="img/girls/{{ girl.img }}" class="img-responsive" alt="{{ girl.alt }}">
+                            <img src="img/girls/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
                         </a>
                     </div>
                 {% endfor %}
