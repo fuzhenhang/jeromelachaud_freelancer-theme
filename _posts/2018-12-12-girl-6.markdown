@@ -2,7 +2,7 @@
 layout: default
 modal-id: 12
 date: 2018-12-12
-img: img/girls/girl6.jpg
+img: girl6.jpg
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
