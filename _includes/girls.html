@@ -1,0 +1,26 @@
+
+    <!-- Girls Grid Section -->
+    <section id="girls">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Girls</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                {% for post in site.posts %}
+                    <div class="col-sm-4 girls-item">
+                        <a href="#girlsModal-{{ post.modal-id }}" class="girls-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="img/girls/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
