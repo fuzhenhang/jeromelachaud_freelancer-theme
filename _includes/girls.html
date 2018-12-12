@@ -10,6 +10,7 @@
             </div>
             <div class="row">
                 {% for post in site.posts %}
+                    {% if post.category == 'girl') %}
                     <div class="col-sm-4 girls-item">
                         <a href="#girlsModal-{{ post.modal-id }}" class="girls-link" data-toggle="modal">
                             <div class="caption">
@@ -20,6 +21,7 @@
                             <img src="img/girls/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
                         </a>
                     </div>
+                    {% endif %}
                 {% endfor %}
             </div>
         </div>
