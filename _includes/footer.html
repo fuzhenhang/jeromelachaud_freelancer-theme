@@ -22,8 +22,13 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>{{ site.footer.credits }}</h3>
-                        <p>{{ site.credits }}</p>
+                        <h3>{{ site.footer.contact }}</h3>
+                        <!-- <p>{{ site.contact }}</p> -->
+                        <p>
+                            {% for adress in site.contact %}
+                                {{ adress.line }} <br>
+		                    {% endfor %}
+                        </p>
                     </div>
                 </div>
             </div>
