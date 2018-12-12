@@ -1,8 +1,8 @@
 ---
 layout: default
-modal-id: 13
+modal-id: 10
 date: 2018-12-12
-img: girl7.jpg
+img: img/girls/girl4.jpg
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
